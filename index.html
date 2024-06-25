@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form onsubmit="addPerson()">
+      <label for="FirstName"> FirstName: </label>
+      <input id="FirstName" type="text" minlength="3" pattern="\p{L}*" placeholder="firstname here"  title="All symbols must be letters (All language support)" required>
+      <label for="LastName"> LastName: </label>
+      <input id="LastName" type="text" minlength="3" pattern="\p{L}*"  placeholder="lastname here"  title="All symbols must be letters (All language support)" required>
+      <label for="Age"> Age: </label>
+      <input  id="Age" type="number"min="18" , placeholder="age here" required>
+      <input type="submit" value="Submit" >
+    </form>
+    <table id ="table" class="styled-table" > 
+        <thead> 
+            <th> FisrName </th>
+            <th> LastName </th>
+            <th> Age </th>
+            <th> </th>
+        </thead>
+        <tbody>
+        </tbody>
+        
+    </table>
+	<script src="script.js"></script>
+  </body>
+</html>

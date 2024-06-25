@@ -1,0 +1,124 @@
+body{
+    background: #050124;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+
+}
+
+form > * {
+    margin: 5px;
+}
+
+label {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+input[type=text], input[type=number], input[type=submit]{
+    background: linear-gradient(to right,  rgba(249, 74, 246, 1) 25%,rgba(114, 48, 201, 1) 35%,rgba(100, 198, 234, 1) 75%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+input:placeholder-shown  {
+    background: linear-gradient(to right,  rgba(249, 74, 246, 0.7) 25%,rgba(114, 48, 201,0.7) 35%,rgba(100, 198, 234, 0.7) 75%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    border-style: hidden;
+    width: 60%;
+    background: linear-gradient(to right,  #f94af6 0%,#7230c9 51%,#64c6ea 100%);
+    border-spacing: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 500ms ease-in-out;
+}
+
+
+
+/* .styled-table thead tr {
+    background-color: #863ede;
+    color: #ffffff;
+    text-align: left;
+} */
+
+.styled-table th,
+.styled-table td {
+    /* border-radius: 20px; */
+    padding: 10px;
+    border: 5px solid  rgba(255, 255, 255, 0.1);    
+    overflow: visible;
+    color: white;
+    text-align: center;
+}
+
+
+/* .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+} */
+
+/* .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #863ede;
+} */
+
+/* .styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #863ede;
+} */
+
+input,
+button
+{
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    background: none;
+	
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: inherit;
+    height: inherit;
+}
+
+.add-icon {
+    width: 20px;
+    height: inherit;
+    object-fit: cover;
+    content: url("https://img.icons8.com/?size=100&id=102544&format=png&color=000000");
+}
+
+
+.delete-icon {
+    width: 30px;
+    height: inherit;
+    object-fit: cover;
+    content: url("./deleteIcon.png");
+}
+
